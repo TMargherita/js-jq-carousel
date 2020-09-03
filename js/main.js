@@ -27,12 +27,19 @@ $(document).ready(function() {
       var imgActive = $("img.active");
       imgActive.removeClass("active");
 
+      var circleActive = $("i.active");
+      circleActive.removeClass("active");
+
       if(imgActive.hasClass("first")) {
         var nextImg = $ ("img.first");
+        var nextCircle = $("i.first");
       } else {
         var nextImg = imgActive.prev();
+        var nextCircle = circleActive.prev();
       }
+      
       nextImg.addClass("active");
+      nextCircle.addClass("active");
     }
   );
 });
