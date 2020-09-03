@@ -26,7 +26,7 @@
     margin: auto;
 }
 .slider-wrapper .images img.active {
-    display: inline-block;
+    display: block;
 }
 .prev, .next {
     position: absolute;
